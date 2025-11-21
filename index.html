@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STRASUC Sports Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./manager/assets/img/icon.png" type="image/png">
+
+    <style>
+        :root {
+            --strasuc-primary: #660033;
+            --strasuc-gold: #D4AF37;
+        }
+
+        .hero {
+            position: relative;
+            height: 90vh;
+            display: flex;
+            flex-direction: column; /* stack logo over text */
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            /* background: var(--strasuc-primary); */
+            color: var(--strasuc-primary);
+            padding: 2rem;
+        }
+
+        .hero-logo {
+            width: 80%; /* adjust size */
+            margin-bottom: 1.2rem;
+            opacity: 1; /* optional */
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            margin-top: 2rem;
+            background: var(--strasuc-gold);
+            color: #000;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- NAVBAR -->
+    <nav class="bg-[var(--strasuc-primary)] shadow">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-white">STRASUC Sports Manager</h1>
+            <a href="./manager/index.php" class="bg-[var(--strasuc-gold)] text-[var(--strasuc-primary)] px-6 py-3 rounded-lg shadow hover:opacity-90 font-semibold">
+                Login
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+     <section class="hero">
+        <img src="./manager/assets/img/logo_landing.png" alt="STRASUC Logo" class="hero-logo">
+        
+        <div class="hero-content">
+            <h2 class="text-4xl font-extrabold mb-4">Manage STRASUC Sports Festival with Ease</h2>
+            <p class="text-lg mb-6">
+                A centralized system for handling universities, sports events, teams,
+                schedules, scoring, and medal tallies.
+            </p>
+            <a href="./viewer/index.html"
+               class="bg-[var(--strasuc-gold)] text-[var(--strasuc-primary)] px-6 py-3 rounded-lg shadow hover:opacity-90 font-semibold">
+               View Events and Live Scores
+            </a>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-[var(--strasuc-primary)]">
+                System Features
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <div class="bg-white p-6 shadow rounded-lg border-t-4 border-[var(--strasuc-gold)]">
+                    <h4 class="text-xl font-semibold mb-2 text-[var(--strasuc-primary)]">Universities Management</h4>
+                    <p>Register STRASUC member universities, manage profiles and medal tallies.</p>
+                </div>
+
+                <div class="bg-white p-6 shadow rounded-lg border-t-4 border-[var(--strasuc-gold)]">
+                    <h4 class="text-xl font-semibold mb-2 text-[var(--strasuc-primary)]">Sports & Teams</h4>
+                    <p>Organize sports categories, events, and the competing teams.</p>
+                </div>
+
+                <div class="bg-white p-6 shadow rounded-lg border-t-4 border-[var(--strasuc-gold)]">
+                    <h4 class="text-xl font-semibold mb-2 text-[var(--strasuc-primary)]">Schedules & Matches</h4>
+                    <p>Create structured schedules, matches, brackets, and time slots.</p>
+                </div>
+
+                <div class="bg-white p-6 shadow rounded-lg border-t-4 border-[var(--strasuc-gold)]">
+                    <h4 class="text-xl font-semibold mb-2 text-[var(--strasuc-primary)]">Participants Tracking</h4>
+                    <p>Track athlete assignments, event participation, and team rosters.</p>
+                </div>
+
+                <div class="bg-white p-6 shadow rounded-lg border-t-4 border-[var(--strasuc-gold)]">
+                    <h4 class="text-xl font-semibold mb-2 text-[var(--strasuc-primary)]">Medals & Scoring</h4>
+                    <p>Automated medal tally with weighted points for ranking universities.</p>
+                </div>
+
+                <div class="bg-white p-6 shadow rounded-lg border-t-4 border-[var(--strasuc-gold)]">
+                    <h4 class="text-xl font-semibold mb-2 text-[var(--strasuc-primary)]">Admin Dashboard</h4>
+                    <p>Complete admin portal for CRUD operations across all tables.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[var(--strasuc-primary)] text-white py-6 mt-10">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-sm">&copy; 2025 STRASUC Sports Manager. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
