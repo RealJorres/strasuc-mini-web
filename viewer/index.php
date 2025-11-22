@@ -453,7 +453,7 @@ $jsonData = json_encode([
                                     <div class="d-flex align-items-center mb-2 p-2 border rounded fade-in">
                                         <div class="sport-icon me-2">
                                             <?php if ($sport): ?>
-                                                <img src="../manager/assets/img/sports_icon/<?= strtolower(str_replace(' ', '_', $sport['name'])) ?>.png"
+                                                <img src="../manager/assets/img/sports_icon/<?= $sport['name'] ?>.png"
                                                     class="sport-image"
                                                     alt="<?= escape($sport['name']) ?>"
                                                     onerror="this.src='../manager/assets/img/sports_icon/default.png'">
@@ -500,7 +500,7 @@ $jsonData = json_encode([
                                     <div class="d-flex align-items-center mb-2 p-2 border rounded fade-in">
                                         <div class="sport-icon me-2">
                                             <?php if ($sport): ?>
-                                                <img src="../manager/assets/img/sports_icon/<?= strtolower(str_replace(' ', '_', $sport['name'])) ?>.png"
+                                                <img src="../manager/assets/img/sports_icon/<?= $sport['name'] ?>.png"
                                                     class="sport-image"
                                                     alt="<?= escape($sport['name']) ?>"
                                                     onerror="this.src='../manager/assets/img/sports_icon/default.png'">
@@ -569,7 +569,7 @@ $jsonData = json_encode([
                                                 <div class="d-flex align-items-center">
                                                     <div class="sport-icon me-2">
                                                         <?php if ($sport): ?>
-                                                            <img src="../manager/assets/img/sports_icon/<?= strtolower(str_replace(' ', '_', $sport['name'])) ?>.png"
+                                                            <img src="../manager/assets/img/sports_icon/<?= $sport['name'] ?>.png"
                                                                 class="sport-image"
                                                                 alt="<?= escape($sport['name']) ?>"
                                                                 onerror="this.src='../manager/assets/img/sports_icon/default.png'">
